@@ -1,5 +1,5 @@
 # RecSys_project
-repository to work on the project assigned at the course Recommender Systems 2024/2025
+A repository to work on the project assigned at the course Recommender Systems 2024/2025
 ## Description
 
 This repository hosts the project for the **Recommender Systems** course at the **Politecnico di Milano**. The project aims to explore and deepen knowledge of **Recommender Systems** in the context of **Artificial Intelligence**. Specifically, our goal is to develop a state-of-the-art book recommendation system..
