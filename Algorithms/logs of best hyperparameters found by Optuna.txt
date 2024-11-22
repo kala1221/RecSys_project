@@ -1,0 +1,40 @@
+Every result is to be considered as MAP@10
+
+--SLIM_EN (no contribution from ICM):
+(
+	delta = learning_rate * (
+        prediction_error * profile_rating
+        - (1 - l1_ratio_val) * regularization_2_val * item_item_S[profile_item_id, item_id]
+        - l1_ratio_val * sign(item_item_S[profile_item_id, item_id])
+        )
+        item_item_S[profile_item_id, item_id] += delta
+        item_item_S[item_id, profile_item_id] += delta
+)
+initial_learning_rate= 0.00010012085679135815
+regularization = 2.668605667480152e-06
+l1_ratio = 0.24613633537942015
+decay_rate = 0.9999991522253808
+Got as results :
+val set => 0.0424
+test set => 0.2819
+
+--SLIM_EN with cosine similarity from ICM included into loss:
+(
+	delta = learning_rate * (
+        prediction_error * profile_rating
+        - (1 - l1_ratio) * regularization_2 * item_item_S[profile_item_id, item_id]
+        - l1_ratio * sign(item_item_S[profile_item_id, item_id])
+        - alpha * (item_item_S[profile_item_id, item_id] - S_icm[profile_item_id, item_id]) #new for icm
+        item_item_S[profile_item_id, item_id] += delta
+        item_item_S[item_id, profile_item_id] += delta
+           
+)	
+
+'alpha': 0.01808726112039536,
+'learning_rate': 0.00010202373981397776 
+'regularization': 1.8374449620346475e-05
+'decay_rate': 0.9999996279382791
+'l1_ratio': 0.034021854645934185
+Got as results:
+val set => 0.0423
+test set => 0.2944
