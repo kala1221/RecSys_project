@@ -38,3 +38,14 @@ test set => 0.2819
 Got as results:
 val set => 0.0423
 test set => 0.2944
+
+-- ItemKNN_CFCBF_Hybrid
+'ICM_weight': 0.30000000000000004 
+'topK': 10
+'shrink': 0
+'similarity': 'cosine'
+'normalize': True
+'feature_weighting': 'BM25'
+'ICM_bias': False
+Got as results:
+test set => 0.0512
