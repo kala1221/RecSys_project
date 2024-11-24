@@ -69,7 +69,7 @@ val set => 0.0433
 'gamma': 4.434871428314343}. 
 Got as results:
 val set => 0.0461
-test set => 0.3601
+test set => 0.3601 (?)
 MORE IN DEPTH RESULTS:
 	Results for Low Activity Users:
 	  MAP: 0.1827
@@ -89,3 +89,4 @@ MORE IN DEPTH RESULTS:
 	 Precision: 0.6441
 	  Recall: 0.4462
 	  NDCG: 0.7125
+on the hidden test set =>0.3473
