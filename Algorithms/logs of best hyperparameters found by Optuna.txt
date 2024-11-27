@@ -16,7 +16,7 @@ l1_ratio = 0.24613633537942015
 decay_rate = 0.9999991522253808
 Got as results :
 val set => 0.0424
-test set => 0.2819
+
 
 --SLIM_EN with cosine similarity from ICM included into loss:
 (
@@ -37,7 +37,7 @@ test set => 0.2819
 'l1_ratio': 0.034021854645934185
 Got as results:
 val set => 0.0423
-test set => 0.2944
+
 
 -- ItemKNN_CFCBF_Hybrid
 'ICM_weight': 0.30000000000000004 
@@ -69,24 +69,4 @@ val set => 0.0433
 'gamma': 4.434871428314343}. 
 Got as results:
 val set => 0.0461
-test set => 0.3601 (?)
-MORE IN DEPTH RESULTS:
-	Results for Low Activity Users:
-	  MAP: 0.1827
-	  Precision: 0.2465
-	  Recall: 0.6095
-	  NDCG: 0.5662
-	  Cutoff 10:
-	Results for Medium Activity Users:
-	  Cutoff 10:
-	  MAP: 0.3215
-	  Precision: 0.3856
-	  Recall: 0.6309
-	  NDCG: 0.6491
-	Results for High Activity Users:
-	Cutoff 10:
-	  MAP: 0.5757
-	 Precision: 0.6441
-	  Recall: 0.4462
-	  NDCG: 0.7125
 on the hidden test set =>0.3473
