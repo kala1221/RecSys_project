@@ -70,3 +70,13 @@ val set => 0.0433
 Got as results:
 val set => 0.0461
 on the hidden test set =>0.3473
+
+--mVAE
+{'epochs': 79,
+ 'batch_size': 418,
+ 'learning_rate': 0.0008864400110679824,
+ 'l2_reg': 7.142052814300075e-05,
+ 'dropout': 0.10675630269315449,
+ 'anneal_cap': 0.3574690571170327,
+ 'total_anneal_steps': 118991}
+val set =>  0.016131781278140567
