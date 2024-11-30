@@ -40,15 +40,15 @@ val set => 0.0423
 
 
 -- ItemKNN_CFCBF_Hybrid
-'ICM_weight': 0.30000000000000004 
-'topK': 10
-'shrink': 0
-'similarity': 'cosine'
-'normalize': True
-'feature_weighting': 'BM25'
-'ICM_bias': False
+'ICM_weight': 0.101105516105394,
+ 'topK': 8,
+ 'shrink': 513,
+ 'similarity': 'cosine',
+ 'normalize': True,
+ 'feature_weighting': 'TF-IDF',
+ 'ICM_bias': 0.0
 Got as results:
-test set => 0.0512
+val set => 0.0519
 
 -- SLIM_BPR
 'epochs': 450
@@ -70,3 +70,43 @@ val set => 0.0433
 Got as results:
 val set => 0.0461
 on the hidden test set =>0.3473
+
+-- P3Alpha
+'topK': 13, 
+'alpha': 0.5259327040945994, 
+'min_rating': 0, 
+'normalize_similarity': True
+val set => 0.053800025827550294
+
+-- RP3Beta
+'alpha': 0.5, 
+'beta': 0.2, 
+'min_rating': 0, 
+'topK': 14, 
+'normalize_similarity': True
+val set => 0.055113335991769506
+
+-- IALS
+'epochs': 50, 
+'num_factors': 126, 
+'confidence_scaling': 'log', 
+'alpha': 0.3846683439017311, 
+'epsilon': 0.5785111328814477, 
+'reg': 0.0005711040479993503
+MAP => 0.0184317689676803 
+
+-- mVAE
+'epochs': 81,
+'batch_size': 400,
+'learning_rate': 0.0025551649074797966,
+'l2_reg': 0.0007824425701328048,
+'dropout': 0.2,
+'anneal_cap': 0.5,
+'total_anneal_steps': 100000
+MAP => 0.015579363054057105
+
+RANKING:
+-RP3Beta
+-P3Alpha
+-Item CFCBF Hybrid
+-SLIMBPR
