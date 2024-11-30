@@ -87,5 +87,5 @@ val set =>  0.016131781278140567
 'confidence_scaling': 'log',
 'alpha': 1.787176209066655, 
 'epsilon': 0.12136419582494692,
-'reg': 0.09388400427743326} 
+'reg': 0.09388400427743326} num_factors could be increased (optuna range was 50, 200) but very time consuming to try
 val set -- >0.020355684122038992.
