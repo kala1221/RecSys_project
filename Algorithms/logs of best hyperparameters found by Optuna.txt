@@ -1,6 +1,12 @@
 Every result is to be considered as MAP@10
+--SLIM EN:
+{'alpha': 0.00027033788984537474,
+'l1_ratio': 0.11401109519483077,
+'topK': 416,
+'positive_only': True}. 
+val_set --> 0.03403850143820325.
 
---SLIM_EN (no contribution from ICM):
+--my SLIM_EN (no contribution from ICM):
 (
 	delta = learning_rate * (
         prediction_error * profile_rating
@@ -18,7 +24,7 @@ Got as results :
 val set => 0.0424
 
 
---SLIM_EN with cosine similarity from ICM included into loss:
+--my SLIM_EN with cosine similarity from ICM included into loss:
 (
 	delta = learning_rate * (
         prediction_error * profile_rating
