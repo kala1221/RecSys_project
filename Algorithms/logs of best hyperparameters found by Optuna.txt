@@ -71,6 +71,25 @@ Got as results:
 val set => 0.0461
 on the hidden test set =>0.3473
 
+--mVAE
+{'epochs': 79,
+ 'batch_size': 418,
+ 'learning_rate': 0.0008864400110679824,
+ 'l2_reg': 7.142052814300075e-05,
+ 'dropout': 0.10675630269315449,
+ 'anneal_cap': 0.3574690571170327,
+ 'total_anneal_steps': 118991}
+val set =>  0.016131781278140567
+
+-IALS
+{'epochs': 42, 
+'num_factors': 200, 
+'confidence_scaling': 'log',
+'alpha': 1.787176209066655, 
+'epsilon': 0.12136419582494692,
+'reg': 0.09388400427743326} num_factors could be increased (optuna range was 50, 200) but very time consuming to try
+val set -- >0.020355684122038992.
+
 -- P3Alpha
 'topK': 13, 
 'alpha': 0.5259327040945994, 
@@ -85,25 +104,6 @@ val set => 0.053800025827550294
 'topK': 14, 
 'normalize_similarity': True
 val set => 0.055113335991769506
-
--- IALS
-'epochs': 50, 
-'num_factors': 126, 
-'confidence_scaling': 'log', 
-'alpha': 0.3846683439017311, 
-'epsilon': 0.5785111328814477, 
-'reg': 0.0005711040479993503
-MAP => 0.0184317689676803 
-
--- mVAE
-'epochs': 81,
-'batch_size': 400,
-'learning_rate': 0.0025551649074797966,
-'l2_reg': 0.0007824425701328048,
-'dropout': 0.2,
-'anneal_cap': 0.5,
-'total_anneal_steps': 100000
-MAP => 0.015579363054057105
 
 RANKING:
 -RP3Beta
