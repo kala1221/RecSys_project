@@ -80,3 +80,12 @@ on the hidden test set =>0.3473
  'anneal_cap': 0.3574690571170327,
  'total_anneal_steps': 118991}
 val set =>  0.016131781278140567
+
+-IALS
+{'epochs': 42, 
+'num_factors': 200, 
+'confidence_scaling': 'log',
+'alpha': 1.787176209066655, 
+'epsilon': 0.12136419582494692,
+'reg': 0.09388400427743326} 
+val set -- >0.020355684122038992.
