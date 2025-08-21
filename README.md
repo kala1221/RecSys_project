@@ -17,10 +17,11 @@ Participants can implement and test any recommender algorithm in Python, while a
 ## Contact
 
 ### Team Members
+| Name                          | Email                                                                 | GitHub                                      |
+|-------------------------------|----------------------------------------------------------------------|---------------------------------------------|
+| **Kalana Kalpitha Kalupahana** | [kalanakalpitha.kalupahana@mail.polimi.it](mailto:kalanakalpitha.kalupahana@mail.polimi.it) | [kala1221](https://github.com/kala1221)     |
+| **Andrea Fondacaro**           | [andrea.fondacaro@mail.polimi.it](mailto:andrea.fondacaro@mail.polimi.it) | [andrea.fondacaro](https://github.com/andrea.fondacaro) |
 
-| Name                            | Email                                     | GitHub                        |
-|---------------------------------|-------------------------------------------|-------------------------------|
-| **Kalana Kalpitha Kalupahana**  | [kalanakalpitha.kalupahana@mail.polimi.it](mailto:kalanakalpitha.kalupahana@mail.polimi.it) | [kala1221](https://github.com/kala1221) |
-| **name**                 | contact |  github_contact |
+
 
 
